@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: steelblue;
+  /* #4682b4 */
+  /* font-family: "Open Sans", arial; */
+}
+table {
+  /* width: auto; */
+  /* max-width: 600px; */
+  /* height: 320px; */
+  border-collapse: collapse;
+  border: 1px solid #38678f;
+  /* margin: 50px 50px; */
+  background: white;
+}
+tr {
+  border-bottom: 1px solid #38678f;
+}
+tbody:hover{
+  cursor: pointer;
+}
+tr:last-child {
+  border-bottom: 0px;
+}
+td {
+  /* border-right: 1px solid #f50000; dikey çizgi */
+  border: 1px solid #f50000; /* dikey çizgi */
+
+  /* padding: 5px; */
+  transition: all 0.2s;
+}
+td:last-child {
+  border-right: 0px;
+}
+td.selected {
+  background: #b43c17;
+  /* z-index: ; */
+}
+th {
+  background: steelblue;
+  height: 35px;
+  /* width: 25%; */
+  font-weight: lighter;
+  text-shadow: 0 1px 0 #38678f;
+  color: white;
+  border: 1px solid #38678f;
+  box-shadow: inset 0px 1px 2px #568ebd;
+  transition: all 0.2s;
+}
+.heavyTable {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  animation: float 5s infinite;
+}
+input {
+  font-size: 14px;
+  background: none;
+  outline: none;
+  border: 0;
+  /* display: table-cell; */
+  text-align: right;
+  /* height: 100%;
+  width: 100%; */
+}
+td input:focus {
+  /* box-shadow: 0 1px 0 steelblue; */
+  color: steelblue;
+}
+::-moz-selection {
+  background: steelblue;
+  color: white;
+}
+::selection {
+  background: steelblue;
+  color: white;
+}
+
+
+
+.tarih {
+    /* Fatura Tarihi */
+  width: 100px;
+}
+.belgeno {
+    /* Fatura Numarası Alanı */
+  width: 152px;
+}
+.kimlikno {
+    /* Unvan Alanı */
+  width: 100px;
+}
+.unvan {
+    /* Unvan Alanı */
+  width: 300px;
+}
+.vergisizb {
+  width: 122px;
+  
+}
+.vergib {
+  width: 100px;
+  
+}
+
+
+.vergisizt {
+  text-align: right;
+}
+.vergit {
+  text-align: right;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+/* thead, tfoot, tbody {
+  display: block;
+}
+
+tbody {
+  height: 400px;      
+  overflow-y: auto;   
+} */
